@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thathsarani Rathnasuriya</title>
+    <link rel="icon" href="venu-high-resolution-logo-transparent.svg" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        html,body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            height: 70%;
+        }
+        
+        
+        .hero-gradient {
+            background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.9) 100%);
+            border-radius: 32px;
+        }
+
+        .btn-hover:hover {
+            background: #000;
+            color: white;
+        }
+
+        .email-btn {
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .socials a {
+            transition: all 0.3s ease;
+        }
+
+        .socials a:hover {
+            color: #000;
+            font-weight:bold;
+        }
+        @keyframes wave {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-20deg); }
+        75% { transform: rotate(20deg); }
+    }
+
+    .wave-hand {
+        display: inline-block;
+        animation: wave 1s ease-in-out infinite;
+        transform-origin: 70% 70%;
+        font-size: 1rem; /* Adjust as needed */
+    }
+    
+        .custom-section {
+      background-color: #f8f8f8;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+</head>
+<body class="bg-gray-50 pt-20">
+    <!-- Navbar Container -->
+    <div class="bg-gray-50 rounded-full shadow-lg px-8 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+        <!-- Email Section -->
+        <div class="bg-gray-200 rounded-full px-3 py-1 flex items-center space-x-3">
+            <span class="text-sm text-gray-700">thathsaranirathnasooriya@gmail.com</span>
+            <button onclick="copyEmail()" class="bg-white text-sm font-medium py-2 px-4 rounded-full shadow hover:bg-gray-100">Copy</button>
+        </div>
+        
+        <!-- CV Button -->
+        <a href="R.T.V. Rathnasuriya.pdf" target="_blank">
+          <button class="bg-white text-sm font-medium py-2 px-4 rounded-full shadow hover:bg-gray-100 ml-4">
+            CV
+          </button>
+        </a>
+        
+        
+        <!-- Social Links Section -->
+        <div class="flex items-center space-x-5 text-gray-700 text-sm ml-auto">
+            <a href="http://www.linkedin.com/in/thathsarani-rathnasuriya-804015290" class="hover:text-gray-900 hover:font-bold">LinkedIn</a>
+            <span>/</span>
+            <a href="https://www.behance.net/thathsarathnas" class="hover:text-gray-900 hover:font-bold">Behance</a>
+            <span>/</span>
+            <a href="https://www.figma.com/@ict20080rtvrath" class="hover:text-gray-900 hover:font-bold">Figma</a>
+            <span>/</span>
+            <a href="https://www.instagram.com/thathsarani_venu/profilecard/?igsh=Yjl6cTVleHNrcHUw" class="hover:text-gray-900 hover:font-bold">Instagram</a>
+            <span>/</span>
+            <a href="https://wa.me/+94701892019" class="hover:text-gray-900 hover:font-bold">Whatsapp</a>
+        </div>
+    </div>
+ 
+    
+    <!-- Main Container -->
+  <div class="w-full max-w-8xl mx-auto">
+    <!-- Portfolio Section -->
+    <section class="bg-gray-50 rounded-full shadow-lg pt-20 p-16 text-center">
+      <!-- Profile Picture and Name -->
+      <div class="flex items-center space-x-4 justify-center ml-auto">
+        <!-- Profile Picture starting from the center -->
+        <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+            <img src="my.jpg" alt="Profile Picture" class="object-cover w-full h-full">
+        </div>
+    
+        <!-- Name and Wave Section to the right of profile picture -->
+        <div class="bg-white rounded-full shadow-sm px-4 py-1 flex items-center space-x-3">
+            <span class="text-lg text-black font-semibold">Thathsarani Rathnasuriya</span>
+            <span class="text-yellow-500 wave-hand">👋</span>
+        </div>
+    </div>
+    
+
+      <!-- Heading -->
+      <h1 class="text-4xl font-bold text-transparent bg-clip-text mt-8 bg-gradient-to-r from-black via-gray-650 to-gray-400">
+        Innovative <span class="text-gray-650">UX</span>, Inspiring <span class="text-gray-400">UI</span>
+      </h1>
+     
+
+
+      <!-- Description -->
+      <p class="text-black mt-6 text-lg leading-relaxed max-w-4xl mx-auto">
+        I'm a university student passionate about designing user-friendly experiences. Through my studies and hands-on projects, I've honed my skills in wireframing, prototyping, and user research. I'm excited to apply these skills in real-world settings, contributing to creative solutions that improve how people interact with products, while continuing to grow as a designer.
+      </p>
+
+      <!-- Hire Me Button -->
+      <a href="http://www.linkedin.com/in/thathsarani-rathnasuriya-804015290" target="_blank">
+        <button class="mt-8 px-8 py-3 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition duration-300">
+            Hire me!
+        </button>
+      </a>
+
+    </section>
+  </div>
+
+    <!-- Tools Section -->
+    <div class="max-w-6xl mx-auto mt-28 px-8 my-28">
+        <div class="flex justify-center space-x-24">
+            <img src="Figma.png" alt="Figma" class="opacity-70 hover:opacity-100">
+            <img src="Webflow.png" alt="Webflow" class="opacity-70 hover:opacity-100">
+            <img src="Wordpress.png" alt="WordPress" class="opacity-70 hover:opacity-100">
+            <img src="Adobe photoshop.png" alt="Adobe Photoshop" class="opacity-70 hover:opacity-100">
+            <img src="Canva.png" alt="Canva" class="opacity-70 hover:opacity-100">
+        </div>
+    </div>
+
+    
+          <div class="custom-section max-w-8xl p-8 py-16 rounded-lg text-center">
+            <h1 class="text-4xl font-bold text-transparent bg-clip-text mt-8 bg-gradient-to-r from-black via-gray-650 to-gray-400">
+              Designing with <span class="text-gray-650">Insight</span>,<br> Building with <span class="text-gray-400">Purpose</span>
+            </h1>
+      
+            <div class="mt-12 flex items-center justify-center">
+              <span class="border border-gray-300 w-full"></span>
+              <span class="mx-4 py-2 px-4 bg-white text-gray-700 font-semibold shadow-md rounded-full">Services</span>
+              <span class="border border-gray-300 w-full"></span>
+            </div>
+      
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Each service box with hover effect -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center h-full transform transition duration-300 hover:scale-105 hover:bg-gray-100 hover:shadow-2xl">
+                  <h2 class="text-lg font-bold text-gray-800">User Research and Analysis</h2>
+                  <p class="text-gray-600 mt-2">Understanding user needs and behaviors through data-driven insights to inform effective design.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center h-full transform transition duration-300 hover:scale-105 hover:bg-gray-100 hover:shadow-2xl">
+                  <h2 class="text-lg font-bold text-gray-800">Information Architecture (IA)</h2>
+                  <p class="text-gray-600 mt-2">Structuring and organizing content to ensure intuitive navigation and user flow.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center h-full transform transition duration-300 hover:scale-105 hover:bg-gray-100 hover:shadow-2xl">
+                  <h2 class="text-lg font-bold text-gray-800">UI/UX Design</h2>
+                  <p class="text-gray-600 mt-2">Crafting visually appealing and user-centered interfaces that provide seamless and satisfying experiences.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center text-center h-full transform transition duration-300 hover:scale-105 hover:bg-gray-100 hover:shadow-2xl">
+                  <h2 class="text-lg font-bold text-gray-800">Interaction Design</h2>
+                  <p class="text-gray-600 mt-2">Designing interactive elements and animations that enhance engagement and guide users intuitively.</p>
+                </div>
+              </div>
+              
+         
+      </div>
+      
+
+    <!-- Projects Section -->
+<div class="max-w-8xl mx-auto mt-16 px-8">
+    <div class="max-w-8xl bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0">
+      
+      <!-- Project 1 -->
+      <a href="https://www.figma.com/design/4TknK7S9xO1jK0YUoOAJBL/Book-Bridge?node-id=0-1&t=INgH9Y4t9elbDMs1-1" target="_blank" class="flex-1 text-center md:text-left no-underline hover:no-underline">
+        <div class="flex items-center justify-center md:justify-start space-x-2 mb-8">
+          <img src="Book.png" alt="Book Bridge Icon" class="w-6 h-6"> <!-- Replace with actual image path -->
+          <h2 class="text-lg font-bold text-gray-800">Book <span class="text-gray-600">Bridge</span></h2>
+        </div>
+        <h3 class="text-md font-semibold text-gray-800">Book Donation UI/UX Design</h3>
+        <p class="text-gray-500 mt-2">The website facilitates the collection and distribution of books by offering a simple and user-friendly platform where donors can contribute books they no longer need.</p>
+        <p class="text-gray-800 font-medium mt-4">2024</p>
+      </a>
+      
+      <!-- Vertical Divider in the Center -->
+      <div class="w-px bg-gray-500 h-48 mx-8 hidden md:block"></div>
+      
+      <!-- Project 2 -->
+      <a href="https://www.figma.com/design/2RMvc0Gk8puhTcN7gcJZZT/E-Wallet?node-id=0-1&t=GnMIULzoES9fpHMc-1" target="_blank" class="flex-1 text-center md:text-left no-underline hover:no-underline">
+        <div class="flex items-center justify-center md:justify-start space-x-2 mb-4">
+          <img src="Ewallet.png" alt="Quick Pay Icon" class="w-6 h-6"> <!-- Replace with actual image path -->
+          <h2 class="text-lg font-bold text-gray-800">Quick <span class="text-gray-600">Pay</span></h2>
+        </div>
+        <h3 class="text-md font-semibold text-gray-800">E-Wallet</h3>
+        <p class="text-gray-500 mt-2">An app to make money transactions easily and quickly. It can be used for online purchases, money transfers, bill payments, and even in-person transactions via mobile devices.</p>
+        <p class="text-gray-800 font-medium mt-6">2024</p>
+      </a>
+    </div>
+  </div>
+
+   <!-- Main Container -->
+   <div class="max-w-8xl mx-auto mt-16 p-6 py-12 bg-gray-50 shadow-sm rounded-lg space-y-6">
+
+    <!-- Title Section -->
+    <div class="text-center py-8">
+      <h1 class="text-3xl font-bold text-gray-800">Empowering Brands through <br> <span class="text-gray-500">Thoughtful Experiences.</span></h1>
+    </div>
+
+    <!-- Divider with "Experiences" Label -->
+    <div class="flex items-center justify-center space-x-4">
+      <hr class="flex-grow border-gray-300">
+      <span class="bg-white px-4 py-2 bg-white text-gray-700 font-semibold shadow-md rounded-full">Experiences</span>
+      <hr class="flex-grow border-gray-300">
+    </div>
+
+    <!-- Experience Section -->
+    <div class="flex mx-auto justify-center max-w-6xl items-start mt-8">
+      <!-- Left Content -->
+      <div class="flex-1">
+        <h2 class="text-lg font-semibold text-gray-800">UI/UX Designer</h2>
+        <p class="text-gray-600">Infact Solutions (PVT) Ltd</p>
+        <p class="text-gray-500 mt-2">I am a UI/UX Designer at Infact Solutions (PVT) Ltd., where I create intuitive and impactful digital experiences that bridge the gap between users and technology.</p>
+      </div>
+
+      <!-- Date Section -->
+      <div class="text-gray-800 font-medium">
+        <p>04/22/2024 - 10/22/2024</p>
+      </div>
+    </div>
+    
+  </div>
+    <!-- Main Container -->
+    <div class="w-full max-w-8xl pt-6 mx-auto">
+      <!-- Portfolio Section -->
+      <section class="bg-gray-50 rounded-t-full shadow-lg pt-8 p-16 text-center"> 
+        <div class="flex items-center space-x-4 justify-center ml-auto">
+          <!-- Profile Picture starting from the center -->
+          <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg">
+              <img src="thank_you.png" alt="Profile Picture" class="object-cover w-full h-full">
+          </div>
+        </div>  
+    
+    <!-- Contact Section -->
+    <div class="max-w-6xl mx-auto mt-4 px-8 py-4 mb-16">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold mb-8 text-transparent bg-clip-text mt-8 bg-gradient-to-r from-black via-gray-650 to-gray-400">
+            Tell me <span class="text-gray-650">about your</span> next <br><span class="text-gray-400">project</span>
+          </h2>
+
+            <div class="flex justify-center gap-4">
+              <!-- Email button with mailto link -->
+              <a href="mailto:your-thathsaranirathnasooriya@gmail.com" class="email-btn px-8 py-3 rounded-full border-gray-600 btn-hover">
+                  Email me
+              </a>
+          
+              <!-- WhatsApp button with wa.me link -->
+              <a href="https://wa.me/+94701892019" class="bg-white px-8 py-3 rounded-full border border-gray-200 hover:bg-gray-100" target="_blank">
+                  WhatsApp
+              </a>
+          </div>
+          
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="max-w-8xl mx-auto px-12 py-2 border-t">
+        <div class="flex justify-between items-center">
+            <p class="text-sm text-gray-500">© All Rights Reserved 2024 by Thathsarani Rathnasuriya</p>
+            <div class="socials flex gap-4 text-gray-500 text-sm">
+                <a href="http://www.linkedin.com/in/thathsarani-rathnasuriya-804015290" target="_blank">LinkedIn</a>
+                <span>/</span>
+                <a href="https://www.behance.net/thathsarathnas">Behance</a>
+                <span>/</span>
+                <a href="https://www.figma.com/@ict20080rtvrath">Figma</a>
+                <span>/</span>
+                <a href="https://www.instagram.com/thathsarani_venu/profilecard/?igsh=Yjl6cTVleHNrcHUw">Instagram</a>
+                <span>/</span>
+                <a href="https://wa.me/+94701892019">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+    </section>
+    </div>
+
+    <script>
+        function copyEmail() {
+            const email = "thathsaranirathnasooriya@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email copied to clipboard!");
+            }).catch((error) => {
+                console.error("Error copying email: ", error);
+            });
+        }
+    </script>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
