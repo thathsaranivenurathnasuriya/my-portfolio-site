@@ -96,7 +96,7 @@
 
   <!-- CV Button -->
   <a href="R.T.V. Rathnasuriya.pdf" target="_blank">
-    <button class="bg-white text-xs md:text-sm font-medium py-1 px-3 md:py-2 md:px-4 rounded-full shadow hover:bg-gray-100 ml-2 md:ml-4">
+    <button class="bg-white text-xs md:text-sm font-medium py-1 px-3 md:py-2 md:px-4 rounded-full shadow hover:bg-gray-100 ml-2 md:ml-2">
       CV
     </button>
   </a>
@@ -171,13 +171,27 @@
     <!-- Tools Section -->
      <!-- Tools Section -->
      <div class="max-w-6xl mx-auto mt-28 px-8 my-28">
-      <div class="flex justify-center space-x-24">
+      <!-- For desktop: horizontal layout with spaced images -->
+      <div class="hidden md:flex justify-center space-x-24">
           <img src="images/Figma.svg" alt="Figma" class="opacity-70 hover:opacity-100">
           <img src="images/Webflow.svg" alt="Webflow" class="opacity-70 hover:opacity-100">
           <img src="images/Wordpress.svg" alt="WordPress" class="opacity-70 hover:opacity-100">
           <img src="images/Adobe photoshop.svg" alt="Adobe Photoshop" class="opacity-70 hover:opacity-100">
           <img src="images/Canva.svg" alt="Canva" class="opacity-70 hover:opacity-100">
       </div>
+      
+      <!-- For mobile: stacked layout with smaller images and centered alignment -->
+      <div class="flex flex-col items-center space-y-6 md:hidden">
+          <img src="images/Figma.svg" alt="Figma" class="opacity-70 hover:opacity-100 w-28">
+          <img src="images/Webflow.svg" alt="Webflow" class="opacity-70 hover:opacity-100 w-28">
+          <img src="images/Wordpress.svg" alt="WordPress" class="opacity-70 hover:opacity-100 w-28">
+          <img src="images/Adobe photoshop.svg" alt="Adobe Photoshop" class="opacity-70 hover:opacity-100 w-28">
+          <img src="images/Canva.svg" alt="Canva" class="opacity-70 hover:opacity-100 w-28">
+      </div>
+    </div>
+    
+    
+    
   </div>
   
 
@@ -316,22 +330,23 @@
     </div>
 
     <!-- Footer -->
-    <footer class="max-w-8xl mx-auto px-12 py-2 border-t">
-        <div class="flex justify-between items-center">
-            <p class="text-sm text-gray-500">© All Rights Reserved 2024 by Thathsarani Rathnasuriya</p>
-            <div class="socials flex gap-4 text-gray-500 text-sm">
-                <a href="http://www.linkedin.com/in/thathsarani-rathnasuriya-804015290" target="_blank">LinkedIn</a>
-                <span>/</span>
-                <a href="https://www.behance.net/thathsarathnas">Behance</a>
-                <span>/</span>
-                <a href="https://www.figma.com/@ict20080rtvrath">Figma</a>
-                <span>/</span>
-                <a href="https://www.instagram.com/thathsarani_venu/profilecard/?igsh=Yjl6cTVleHNrcHUw">Instagram</a>
-                <span>/</span>
-                <a href="https://wa.me/+94701892019">WhatsApp</a>
-            </div>
-        </div>
-    </footer>
+  <footer class="max-w-8xl mx-auto px-12 py-2 border-t">
+      <div class="flex flex-col sm:flex-row justify-between items-center">
+          <p class="text-sm text-gray-500 mb-2 sm:mb-0">© All Rights Reserved 2024 by Thathsarani Rathnasuriya</p>
+          <div class="socials flex flex-wrap justify-center gap-4 text-gray-500 text-sm">
+              <a href="http://www.linkedin.com/in/thathsarani-rathnasuriya-804015290" target="_blank" class="hover:text-blue-500">LinkedIn</a>
+              <span>/</span>
+              <a href="https://www.behance.net/thathsarathnas" class="hover:text-blue-500">Behance</a>
+              <span>/</span>
+              <a href="https://www.figma.com/@ict20080rtvrath" class="hover:text-blue-500">Figma</a>
+              <span>/</span>
+              <a href="https://www.instagram.com/thathsarani_venu/profilecard/?igsh=Yjl6cTVleHNrcHUw" class="hover:text-blue-500">Instagram</a>
+              <span>/</span>
+              <a href="https://wa.me/+94701892019" class="hover:text-blue-500">WhatsApp</a>
+          </div>
+      </div>
+  </footer>
+  
     </section>
     </div>
 
