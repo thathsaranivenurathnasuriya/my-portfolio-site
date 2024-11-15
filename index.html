@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thathsarani Rathnasuriya</title>
-    <link rel="icon" href="venu-high-resolution-logo-transparent.svg" type="image/png">
+    <link rel="icon" href="imges/venu-high-resolution-logo-transparent.svg" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
@@ -28,6 +30,23 @@
             background: #000;
             color: white;
         }
+        .icon-bg {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;    /* Icon container width */
+            height: 40px;   /* Icon container height */
+            background-color: rgba(128, 128, 128, 0.701); /* Example background color (LinkedIn blue) */
+            color: white;   /* Icon color */
+            border-radius: 50%; /* Makes the background circular */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+.icon-bg:hover {
+    background-color: #000; /* Change color on hover */
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
 
         .email-btn {
             border: 1px solid #e5e7eb;
@@ -63,36 +82,45 @@
     </style>
 </head>
 <body class="bg-gray-50 pt-20">
-    <!-- Navbar Container -->
-    <div class="bg-gray-50 rounded-full shadow-lg px-8 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
-        <!-- Email Section -->
-        <div class="bg-gray-200 rounded-full px-3 py-1 flex items-center space-x-3">
-            <span class="text-sm text-gray-700">thathsaranirathnasooriya@gmail.com</span>
-            <button onclick="copyEmail()" class="bg-white text-sm font-medium py-2 px-4 rounded-full shadow hover:bg-gray-100">Copy</button>
-        </div>
-        
-        <!-- CV Button -->
-        <a href="R.T.V. Rathnasuriya.pdf" target="_blank">
-          <button class="bg-white text-sm font-medium py-2 px-4 rounded-full shadow hover:bg-gray-100 ml-4">
-            CV
-          </button>
-        </a>
-        
-        
-        <!-- Social Links Section -->
-        <div class="flex items-center space-x-5 text-gray-700 text-sm ml-auto">
-            <a href="http://www.linkedin.com/in/thathsarani-rathnasuriya-804015290" class="hover:text-gray-900 hover:font-bold">LinkedIn</a>
-            <span>/</span>
-            <a href="https://www.behance.net/thathsarathnas" class="hover:text-gray-900 hover:font-bold">Behance</a>
-            <span>/</span>
-            <a href="https://www.figma.com/@ict20080rtvrath" class="hover:text-gray-900 hover:font-bold">Figma</a>
-            <span>/</span>
-            <a href="https://www.instagram.com/thathsarani_venu/profilecard/?igsh=Yjl6cTVleHNrcHUw" class="hover:text-gray-900 hover:font-bold">Instagram</a>
-            <span>/</span>
-            <a href="https://wa.me/+94701892019" class="hover:text-gray-900 hover:font-bold">Whatsapp</a>
-        </div>
-    </div>
- 
+<!-- Navbar Container -->
+<div class="bg-gray-50 rounded-full shadow-lg px-8 py-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
+  <!-- Email Section -->
+  <div class="bg-gray-200 rounded-full px-3 py-1 flex items-center space-x-3">
+      <span class="text-sm text-gray-700">thathsaranirathnasooriya@gmail.com</span>
+      <button onclick="copyEmail()" class="bg-white text-sm font-medium py-2 px-4 rounded-full shadow hover:bg-gray-100">Copy</button>
+  </div>
+  
+  <!-- CV Button -->
+  <a href="R.T.V. Rathnasuriya.pdf" target="_blank">
+    <button class="bg-white text-sm font-medium py-2 px-4 rounded-full shadow hover:bg-gray-100 ml-4">
+      CV
+    </button>
+  </a>
+  
+<!-- Social Links Section -->
+<div class="flex flex-col-reverse md:flex-row items-center text-gray-700 text-sm ml-auto space-y-5 md:space-y-0 md:space-x-5 fixed md:static bottom-0 right-0 p-5 md:p-0">
+  <a href="http://www.linkedin.com/in/thathsarani-rathnasuriya-804015290" class="hover:text-gray-900">
+    <span class="icon-bg"><i class="fab fa-linkedin fa-lg"></i></span>
+  </a>
+  <a href="https://www.behance.net/thathsarathnas" class="hover:text-gray-900">
+    <span class="icon-bg"><i class="fab fa-behance fa-lg"></i></span>
+  </a>
+  <a href="https://www.figma.com/@ict20080rtvrath" class="hover:text-gray-900">
+    <span class="icon-bg"><i class="fab fa-figma fa-lg"></i></span>
+  </a>
+  <a href="https://www.instagram.com/thathsarani_venu/profilecard/?igsh=Yjl6cTVleHNrcHUw" class="hover:text-gray-900">
+    <span class="icon-bg"><i class="fab fa-instagram fa-lg"></i></span>
+  </a>
+  <a href="https://wa.me/+94701892019" class="hover:text-gray-900">
+    <span class="icon-bg"><i class="fab fa-whatsapp fa-lg"></i></span>
+  </a>
+</div>
+
+
+
+</div>
+
+
     
     <!-- Main Container -->
   <div class="w-full max-w-8xl mx-auto">
@@ -102,7 +130,7 @@
       <div class="flex items-center space-x-4 justify-center ml-auto">
         <!-- Profile Picture starting from the center -->
         <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
-            <img src="my.jpg" alt="Profile Picture" class="object-cover w-full h-full">
+            <img src="images/my.jpg" alt="Profile Picture" class="object-cover w-full h-full">
         </div>
     
         <!-- Name and Wave Section to the right of profile picture -->
@@ -136,15 +164,17 @@
   </div>
 
     <!-- Tools Section -->
-    <div class="max-w-6xl mx-auto mt-28 px-8 my-28">
-        <div class="flex justify-center space-x-24">
-            <img src="Figma.png" alt="Figma" class="opacity-70 hover:opacity-100">
-            <img src="Webflow.png" alt="Webflow" class="opacity-70 hover:opacity-100">
-            <img src="Wordpress.png" alt="WordPress" class="opacity-70 hover:opacity-100">
-            <img src="Adobe photoshop.png" alt="Adobe Photoshop" class="opacity-70 hover:opacity-100">
-            <img src="Canva.png" alt="Canva" class="opacity-70 hover:opacity-100">
-        </div>
-    </div>
+     <!-- Tools Section -->
+     <div class="max-w-6xl mx-auto mt-28 px-8 my-28">
+      <div class="flex justify-center space-x-24">
+          <img src="images/Figma.svg" alt="Figma" class="opacity-70 hover:opacity-100">
+          <img src="images/Webflow.svg" alt="Webflow" class="opacity-70 hover:opacity-100">
+          <img src="images/Wordpress.svg" alt="WordPress" class="opacity-70 hover:opacity-100">
+          <img src="images/Adobe photoshop.svg" alt="Adobe Photoshop" class="opacity-70 hover:opacity-100">
+          <img src="images/Canva.svg" alt="Canva" class="opacity-70 hover:opacity-100">
+      </div>
+  </div>
+  
 
     
           <div class="custom-section max-w-8xl p-8 py-16 rounded-lg text-center">
@@ -192,7 +222,7 @@
       <!-- Project 1 -->
       <a href="https://www.figma.com/design/4TknK7S9xO1jK0YUoOAJBL/Book-Bridge?node-id=0-1&t=INgH9Y4t9elbDMs1-1" target="_blank" class="flex-1 text-center md:text-left no-underline hover:no-underline">
         <div class="flex items-center justify-center md:justify-start space-x-2 mb-8">
-          <img src="Book.png" alt="Book Bridge Icon" class="w-6 h-6"> <!-- Replace with actual image path -->
+          <img src="images/Book.svg" alt="Book Bridge Icon" class="w-6 h-6"> <!-- Replace with actual image path -->
           <h2 class="text-lg font-bold text-gray-800">Book <span class="text-gray-600">Bridge</span></h2>
         </div>
         <h3 class="text-md font-semibold text-gray-800">Book Donation UI/UX Design</h3>
@@ -206,7 +236,7 @@
       <!-- Project 2 -->
       <a href="https://www.figma.com/design/2RMvc0Gk8puhTcN7gcJZZT/E-Wallet?node-id=0-1&t=GnMIULzoES9fpHMc-1" target="_blank" class="flex-1 text-center md:text-left no-underline hover:no-underline">
         <div class="flex items-center justify-center md:justify-start space-x-2 mb-4">
-          <img src="Ewallet.png" alt="Quick Pay Icon" class="w-6 h-6"> <!-- Replace with actual image path -->
+          <img src="images/Ewallet.svg" alt="Quick Pay Icon" class="w-6 h-6"> <!-- Replace with actual image path -->
           <h2 class="text-lg font-bold text-gray-800">Quick <span class="text-gray-600">Pay</span></h2>
         </div>
         <h3 class="text-md font-semibold text-gray-800">E-Wallet</h3>
@@ -254,7 +284,7 @@
         <div class="flex items-center space-x-4 justify-center ml-auto">
           <!-- Profile Picture starting from the center -->
           <div class="w-32 h-32 rounded-full overflow-hidden shadow-lg">
-              <img src="thank_you.png" alt="Profile Picture" class="object-cover w-full h-full">
+              <img src="images/thankyou.svg" alt="Profile Picture" class="object-cover w-full h-full">
           </div>
         </div>  
     
